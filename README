@@ -12,7 +12,12 @@ USAGE
 
 shell> ./appcfg.py update /path/to/this/dir
 
-3. Load the javascript file on your blog.
+3. Customize javascript.
+
+Edit nippondanji_hatena_bookmark_widget.js and adjust variables at the beginning.
+Please find the comment like "User variables".
+
+4. Load the javascript file on your blog.
 
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="nippondanji_hatena_bookmark_widget.js"></script>
