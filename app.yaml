@@ -5,8 +5,8 @@ api_version: 1
 
 handlers:
 - url: /(show)?
-  script: myhatenacache.py
+  script: showjson.py
 
 - url: /fetch
-  script: fetchbmjson.py
+  script: fetch.py
   login: admin

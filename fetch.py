@@ -1,6 +1,23 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
+# Copyright (C) 2010  Mikiya Okuno
+#
+# This file is part of Trivial Hatena Bookmark Entrylist Booster.
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with Foobar.  If not, see <http://www.gnu.org/licenses/>.
+
 import re
 import urllib2
 from HTMLParser import HTMLParser
@@ -12,13 +29,9 @@ from google.appengine.ext import db
 from google.appengine.api import users
 from google.appengine.ext import webapp
 
-json_url = 'http://b.hatena.ne.jp/entrylist/json?url='\
-    + urllib2.quote('http://nippondanji.blogspot.com/')\
-    + '&sort=count'
-
+blog_url = 'http://nippondanji.blogspot.com/'
 entry_url = 'http://b.hatena.ne.jp/entrylist?url='\
-    + urllib2.quote('http://nippondanji.blogspot.com/')\
-    + '&sort=count'
+    + urllib2.quote(blog_url) + '&sort=count'
 
 
 class BmEntry(db.Model):

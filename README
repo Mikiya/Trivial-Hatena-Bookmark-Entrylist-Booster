@@ -1,0 +1,26 @@
+Trivial Hatena Bookmark Entrylist Booster
+
+Copyright (C) 2010  Mikiya Okuno
+
+-----
+USAGE
+-----
+
+1. Adjust blog_url variable in fetch.py.
+
+2. Deploy the following files to Google App Engine
+
+shell> ./appcfg.py update /path/to/this/dir
+
+3. Load the javascript file on your blog.
+
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="nippondanji_hatena_bookmark_widget.js"></script>
+
+# Note that this widget requires jQuery.
+
+-------
+LICENSE
+-------
+
+GPLv3
