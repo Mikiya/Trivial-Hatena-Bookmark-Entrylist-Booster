@@ -1,0 +1,12 @@
+application: nippondanji-bm-cache
+version: 1
+runtime: python
+api_version: 1
+
+handlers:
+- url: /(show)?
+  script: myhatenacache.py
+
+- url: /fetch
+  script: fetchbmjson.py
+  login: admin

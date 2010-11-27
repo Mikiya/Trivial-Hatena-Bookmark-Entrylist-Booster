@@ -1,0 +1,4 @@
+cron:
+- description: fetching entrylist from hatena bookmark
+  url: /fetch
+  schedule: every 15 minutes
